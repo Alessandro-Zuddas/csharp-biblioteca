@@ -55,7 +55,7 @@ while (true)
 
             foreach (var book in books)
             {
-                if (book.getDocTitle() == userTitle)
+                if (book.getDocTitle().ToLower() == userTitle)
                 {
                     Console.WriteLine();
                     Console.WriteLine(book);
@@ -66,7 +66,7 @@ while (true)
 
             foreach (var dvd in dvds)
             {
-                if (dvd.getDocTitle() == userTitle)
+                if (dvd.getDocTitle().ToLower() == userTitle)
                 {
                     Console.WriteLine();
                     Console.WriteLine(dvd);
@@ -85,7 +85,7 @@ while (true)
             foreach (var book in books)
             {
 
-                if (book.getDocCode() == userCode)
+                if (book.getDocCode().ToLower() == userCode)
                 {
                     Console.WriteLine();
                     Console.WriteLine(book);
@@ -97,7 +97,7 @@ while (true)
             foreach (var dvd in dvds)
             {
 
-                if (dvd.getDocTitle() == userCode)
+                if (dvd.getDocCode().ToLower() == userCode)
                 {
                     Console.WriteLine();
                     Console.WriteLine(dvd);
