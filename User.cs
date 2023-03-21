@@ -4,47 +4,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp_biblioteca
+public class User
 {
-    public class User
+    string surname;
+    string name;
+    string email;
+    string password;
+    int telephone;
+
+    public User(string surname, string name, string email, string password, int telephone)
     {
-        string surname;
-        string name;
-        string email;
-        string password;
-        int telephone;
+        this.surname = surname;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.telephone = telephone;
+    }
 
-        public User(string surname, string name, string email, string password, int telephone)
-        {
-            this.surname = surname;
-            this.name = name;
-            this.email = email;
-            this.password = password;
-            this.telephone = telephone;
-        }
+    public string getSurname()
+    {
+        return this.surname;
+    }
 
-        public string getSurname()
-        {
-            return this.surname;
-        }
+    public string getName()
+    {
+        return this.name;
+    }
 
-        public string getName()
-        {
-            return this.name;
-        }
+    public string getEmail()
+    {
+        return this.email;
+    }
 
-        public string getEmail()
-        {
-            return this.email;
-        }
-
-        public string getPassword()
-        {
-            return this.password;
-        }
-        public int getTelephone()
-        {
-            return this.telephone;
-        }
+    public string getPassword()
+    {
+        return this.password;
+    }
+    public int getTelephone()
+    {
+        return this.telephone;
     }
 }
