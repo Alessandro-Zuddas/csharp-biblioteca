@@ -24,6 +24,36 @@ namespace csharp_biblioteca
             this.docLocation = docLocation;
             this.docAuthor = docAuthor;
         }
+
+        public string getDocCode()
+        {
+            return this.docCode;
+        }
+
+        public string getDocTitle()
+        {
+            return this.docTitle;
+        }
+
+        public string getDocYear()
+        {
+            return this.docYear;
+        }
+
+        public string getDocCourse()
+        {
+            return this.docCourse;
+        }
+
+        public string getDocLocation()
+        {
+            return this.docLocation;
+        }
+
+        public string getDocAuthor()
+        {
+            return this.docAuthor;
+        }
     }
 
     public class Book : Document
@@ -35,6 +65,11 @@ namespace csharp_biblioteca
         {
             this.bookPages = bookPages;
         }
+
+        public int getBookPages()
+        {
+            return this.bookPages;
+        }
     }
 
     public class Dvd : Document
@@ -45,6 +80,11 @@ namespace csharp_biblioteca
         public Dvd(string docCode, string docTitle, string docYear, string docCourse, string docLocation, string docAuthor, string duration) : base(docCode, docTitle, docYear, docCourse, docLocation, docAuthor)
         {
             this.duration = duration;
+        }
+
+        public string getDuration()
+        {
+            return this.duration;
         }
     }
 }

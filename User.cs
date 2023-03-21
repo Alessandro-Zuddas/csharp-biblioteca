@@ -21,6 +21,30 @@ namespace csharp_biblioteca
             this.email = email;
             this.password = password;
             this.telephone = telephone;
-        }       
+        }
+
+        public string getSurname()
+        {
+            return this.surname;
+        }
+
+        public string getName()
+        {
+            return this.name;
+        }
+
+        public string getEmail()
+        {
+            return this.email;
+        }
+
+        public string getPassword()
+        {
+            return this.password;
+        }
+        public int getTelephone()
+        {
+            return this.telephone;
+        }
     }
 }
